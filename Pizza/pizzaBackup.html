@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="PizzaDrill.css">
+	<link href='https://fonts.googleapis.com/css?family=Jim Nightshade' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
+	</head>
+	
+	<body>
+		<!-- Image and greeting -->
+		<div class="container-fluid">
+			<h1 id="mainhead">Angel's Pies</h1>
+			<h2 id="subhead">A slice of <span id="hvn">heaven</span>!!</h2>
+		</div>
+		<!-- /Image and greeting -->
+		
+		<!-- Main container: ordering -->
+		<div class="container outside">
+			<p class="main">Place your order online now:</p>	
+			
+			<!--size buttons-->
+			<form id="menu">
+				<div class="form-group row col sizeStyle" id="sizeSelect">
+				Select a size:&nbsp&nbsp;			
+					<div class="form-check form-check-inline">
+						<label class="form-check-label">
+							<input class="form-check-input size" type="radio" name="size" value="Personal Pizza"> Personal $6.00
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label">
+							<input class="form-check-input size" type="radio" name="size" value="Medium Pizza"> Medium $10.00
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label">
+							<input class="form-check-input size" type="radio" name="size" value="Large Pizza" checked> Large $14.00
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label">
+							<input class="form-check-input size" type="radio" name="size" value="Extra Large Pizza"> Extra Large $16.00
+						</label>
+					</div>
+				</div>
+				<!--/size buttons-->
+			
+				<!--crust, sauce and cheese grid -->
+				<div class="container pizzabase">
+					<div class="form-group row">
+					
+						<!-- Crust Selections -->
+						<div class="form-check col-md crustStyle" id="crustSelect">
+						Select crust:<br>
+							<label class="form-check-label">
+								<input class="form-check-input crust" type="radio" name="crust" id="plain" value="Plain Crust" checked> Plain Crust
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input crust" type="radio" name="crust" id="garlicButter" value="Garlic Butter Crust"> Garlic Butter Crust
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input crust" type="radio" name="crust" id="chzStuffed" value="Cheese Stuffed Crust"> Cheese Stuffed Crust (+$3.00)
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input crust" type="radio" name="crust" id="spicy" value="Spicy Crust"> Spicy Crust
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input crust" type="radio" name="crust" id="house" value="House Special Crust"> House Special Crust
+							</label>
+						</div>
+						<!-- /Crust Selections -->
+						
+						<!--Sauce Selections -->
+						<div class="form-check col-md sauceStyle" id="sauceSelect">
+						Select sauce:<br>
+							<label class="form-check-label">
+								<input class="form-check-input sauce" type="radio" name="sauce" id="marinara" value="Marinara Sauce" checked> Marinara Sauce
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input sauce" type="radio" name="sauce" id="white" value="White Sauce"> White Sauce
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input sauce" type="radio" name="sauce" id="bbq" value="Barbecue Sauce"> Barbecue Sauce
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input sauce" type="radio" name="sauce" id="nosauce" value="No Sauce"> No Sauce
+							</label>
+						</div>
+						<!-- /Sauce Selections -->
+						
+						<!--Cheese Selections -->
+						<div class="form-check col-md cheeseStyle" id="cheeseSelect">
+						Select cheese:<br>
+							<label class="form-check-label">
+								<input class="form-check-input cheese" type="radio" name="cheese" id="regchz" value="Reglar Cheese" checked> Reglar Cheese
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input cheese" type="radio" name="cheese" id="nochz" value="No Cheese"> No Cheese
+							</label><br>
+							<label class="form-check-label">
+								<input class="form-check-input cheese" type="radio" name="cheese" id="xtchz" value="Extra Cheese"> Extra Cheese (+$3.00)
+							</label>
+						</div>
+						<!-- /Cheese Selections -->
+					</div>
+				</div>
+				<!--crust, sauce and cheese grid-->
+				
+				<!-- Toppings-->
+				<p class="toppings">Select toppings:</p>
+				<div class="container">
+					<div class="row">
+						<!--Meats-->
+						<div class="col form-check" id="meatSelect">
+							<p class="top">Meats $1.00/topping</p> 
+							<p class="subtop">First meat topping is complementary.</p>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input meat" value="Pepperoni">
+								Pepperoni
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input meat" value="Sausage">
+								Sausage
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input meat" value="Canadian Bacon">
+								Canadian Bacon
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input meat" value="Ground Beef">
+								Ground Beef
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input meat" value="Anchovy">
+								Anchovy
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input meat" value="Chicken">
+								Chicken
+							</label>
+						</div>
+						<!--/Meats-->
+						
+						<!--Veggies-->
+						<div class="col form-check" id="veggieSelect">
+							<p class="top">Veggies $1.00/topping</p> 
+							<p class="subtop">First veggie topping is complementary.</p>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Tomatoes">
+								Tomatoes
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Onions">
+								Onions
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Olives">
+								Olives
+							</label><br>
+							<label class="form-check-label ">
+								<input type="checkbox" class="form-check-input veg" value="Green Peppers">
+								Green Peppers
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Mushrooms">
+								Mushrooms
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Pineapple">
+								Pineapple
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Spinach">
+								Spinach
+							</label><br>
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input veg" value="Jalapeno">
+								Jalapeno
+							</label>
+						</div>
+						<!--/Veggies-->
+					</div>
+				</div>
+				<!-- /Toppings-->
+			</form>
+			<!--Order and Cancel buttons-->
+			<div class="container orderbtns">
+				<button type="button" class="btn btn-custom" onclick="getReceipt()">Place Order</button>
+				<button type="button" class="btn btn-secondary" onclick="clrForm()">Cancel</button>
+			</div>
+			<!--/Order and Cancel buttons-->
+		</div>
+		<!-- /Main container: ordering -->
+		
+		<!--Receipt display-->
+		<div class="container" id="receipt">
+			<p id="orderConf"></p>
+			<p id="pieSize"></p>
+			<p id="crustType"></p>
+			<p id="sauceType"></p>
+			<p id="chzType"></p>
+			<p id="meatTop"></p>
+			<p id="vegTop"></p>
+			<p id="grandTotal"></p>
+		</div>
+		<!--/Receipt display-->
+		
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src ="PizzaDrill.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
