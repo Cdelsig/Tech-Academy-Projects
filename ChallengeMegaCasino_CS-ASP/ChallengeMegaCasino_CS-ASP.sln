@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeMegaCasino_CS-ASP", "ChallengeMegaCasino_CS-ASP\ChallengeMegaCasino_CS-ASP.csproj", "{D050AFE3-83DF-4895-9688-3E13C6A9C753}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D050AFE3-83DF-4895-9688-3E13C6A9C753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D050AFE3-83DF-4895-9688-3E13C6A9C753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D050AFE3-83DF-4895-9688-3E13C6A9C753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D050AFE3-83DF-4895-9688-3E13C6A9C753}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
