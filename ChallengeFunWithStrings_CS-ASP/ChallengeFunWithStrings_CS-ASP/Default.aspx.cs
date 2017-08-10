@@ -69,6 +69,11 @@ namespace ChallengeFunWithStrings_CS_ASP
             // Once you fix it with string helper methods, it should read:
             // Now is the time for all good men to come to the aid of their country.
 
+            //how instructor solved is better so don't have to hard code char val:
+
+            //string removeMe = "remove-me";
+            //int index = puzzle.IndexOf(removeMe);
+            //puzzle = puzzle.Remove(index, removeMe.Length);
             int index = puzzle.IndexOf("remove-me");
             newPuzzle = puzzle.Remove(index, 9).Replace("Z", "T").ToLower();
             capPuzzle = newPuzzle.Remove(0, 1).Insert(0, "N");
