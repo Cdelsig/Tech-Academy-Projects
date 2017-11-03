@@ -1,0 +1,20 @@
+body {
+	background-color: #ffffcc;
+}
+
+h1 {
+	color: white;
+	font-family: roboto;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+
+.signup {
+	display: inline-block;
+	text-align: center;
+}
+
+.jumbomax {
+	width: 100%
+}
