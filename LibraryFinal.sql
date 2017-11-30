@@ -11,7 +11,7 @@ AS
 
 CREATE TABLE tbl_publisher (
     publisher_ID INT PRIMARY KEY NOT NULL IDENTITY (1,1),
-	publisher_Name VARCHAR(50), 
+    publisher_Name VARCHAR(50), 
     publisher_Address VARCHAR(100) NOT NULL,
     publisher_Phone VARCHAR(15)
 );
